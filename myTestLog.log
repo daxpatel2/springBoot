@@ -381,3 +381,154 @@ java.lang.IllegalStateException: email already exists, hence student probably ex
 2024-06-14T15:03:50.894+05:30  INFO 6960 --- [tutorials point] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-06-14T15:03:50.895+05:30  INFO 6960 --- [tutorials point] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-06-14T15:04:25.699+05:30  WARN 6960 --- [tutorials point] [http-nio-9090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-06-14T15:46:09.501+05:30  INFO 6960 --- [tutorials point] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T15:46:09.511+05:30  INFO 6960 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T15:46:09.513+05:30  INFO 6960 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T15:46:12.558+05:30  INFO 8072 --- [tutorials point] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 22.0.1 with PID 8072 (/Users/daxpatel/Desktop/demo/target/classes started by daxpatel in /Users/daxpatel/Desktop/demo)
+2024-06-14T15:46:12.559+05:30  INFO 8072 --- [tutorials point] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T15:46:12.986+05:30  INFO 8072 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T15:46:13.016+05:30  INFO 8072 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2024-06-14T15:46:13.313+05:30  INFO 8072 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-06-14T15:46:13.320+05:30  INFO 8072 --- [tutorials point] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T15:46:13.321+05:30  INFO 8072 --- [tutorials point] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T15:46:13.352+05:30  INFO 8072 --- [tutorials point] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T15:46:13.353+05:30  INFO 8072 --- [tutorials point] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2024-06-14T15:46:13.444+05:30  INFO 8072 --- [tutorials point] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T15:46:13.474+05:30  INFO 8072 --- [tutorials point] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-14T15:46:13.492+05:30  INFO 8072 --- [tutorials point] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-14T15:46:13.667+05:30  INFO 8072 --- [tutorials point] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14T15:46:13.683+05:30  INFO 8072 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T15:46:13.762+05:30  INFO 8072 --- [tutorials point] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df791a4
+2024-06-14T15:46:13.763+05:30  INFO 8072 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T15:46:13.782+05:30  WARN 8072 --- [tutorials point] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-14T15:46:14.263+05:30  INFO 8072 --- [tutorials point] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-14T15:46:14.273+05:30  WARN 8072 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T15:46:14.273+05:30  WARN 8072 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2024-06-14T15:46:14.273+05:30  WARN 8072 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T15:46:14.274+05:30  WARN 8072 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "student_sequence" does not exist, skipping
+2024-06-14T15:46:14.287+05:30  INFO 8072 --- [tutorials point] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T15:46:14.505+05:30  WARN 8072 --- [tutorials point] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T15:46:14.735+05:30  INFO 8072 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-06-14T15:46:14.741+05:30  INFO 8072 --- [tutorials point] [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.476 seconds (process running for 2.938)
+2024-06-14T15:46:36.080+05:30  INFO 8072 --- [tutorials point] [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T15:46:36.081+05:30  INFO 8072 --- [tutorials point] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T15:46:36.082+05:30  INFO 8072 --- [tutorials point] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-14T15:46:36.108+05:30  WARN 8072 --- [tutorials point] [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "students"]
+2024-06-14T15:47:07.977+05:30  WARN 8072 --- [tutorials point] [http-nio-9090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "students"]
+2024-06-14T15:48:32.386+05:30  WARN 8072 --- [tutorials point] [http-nio-9090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-06-14T15:49:42.194+05:30  WARN 8072 --- [tutorials point] [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "students"]
+2024-06-14T16:13:03.880+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s780ms).
+2024-06-14T16:15:13.556+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s676ms).
+2024-06-14T17:17:59.455+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m45s899ms).
+2024-06-14T17:20:09.088+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s632ms).
+2024-06-14T18:14:00.449+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m51s362ms).
+2024-06-14T18:40:16.199+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m15s750ms).
+2024-06-14T18:57:00.323+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s124ms).
+2024-06-14T19:14:05.277+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m4s954ms).
+2024-06-14T19:15:25.075+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s798ms).
+2024-06-14T19:42:27.390+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m2s314ms).
+2024-06-14T20:02:22.978+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m55s589ms).
+2024-06-14T20:14:56.146+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m33s168ms).
+2024-06-14T20:57:48.551+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m52s405ms).
+2024-06-14T20:59:58.187+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s636ms).
+2024-06-14T21:32:06.618+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m8s431ms).
+2024-06-14T22:17:01.420+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m54s801ms).
+2024-06-14T22:33:46.170+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s750ms).
+2024-06-14T22:35:55.819+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s650ms).
+2024-06-14T22:38:37.041+05:30  WARN 8072 --- [tutorials point] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s221ms).
+2024-06-14T23:03:05.927+05:30  INFO 8072 --- [tutorials point] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:03:05.941+05:30  INFO 8072 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T23:03:05.942+05:30  INFO 8072 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T23:03:09.341+05:30  INFO 10356 --- [tutorials point] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 22.0.1 with PID 10356 (/Users/daxpatel/Desktop/demo/target/classes started by daxpatel in /Users/daxpatel/Desktop/demo)
+2024-06-14T23:03:09.343+05:30  INFO 10356 --- [tutorials point] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T23:03:09.770+05:30  INFO 10356 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T23:03:09.800+05:30  INFO 10356 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-06-14T23:03:10.107+05:30  INFO 10356 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-06-14T23:03:10.115+05:30  INFO 10356 --- [tutorials point] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T23:03:10.115+05:30  INFO 10356 --- [tutorials point] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T23:03:10.144+05:30  INFO 10356 --- [tutorials point] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T23:03:10.144+05:30  INFO 10356 --- [tutorials point] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2024-06-14T23:03:10.243+05:30  INFO 10356 --- [tutorials point] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T23:03:10.275+05:30  INFO 10356 --- [tutorials point] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-14T23:03:10.294+05:30  INFO 10356 --- [tutorials point] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-14T23:03:10.474+05:30  INFO 10356 --- [tutorials point] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14T23:03:10.490+05:30  INFO 10356 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T23:03:10.567+05:30  INFO 10356 --- [tutorials point] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@729cd862
+2024-06-14T23:03:10.568+05:30  INFO 10356 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T23:03:10.587+05:30  WARN 10356 --- [tutorials point] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-14T23:03:11.076+05:30  INFO 10356 --- [tutorials point] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-14T23:03:11.086+05:30  WARN 10356 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:03:11.086+05:30  WARN 10356 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2024-06-14T23:03:11.087+05:30  WARN 10356 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:03:11.087+05:30  WARN 10356 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "student_sequence" does not exist, skipping
+2024-06-14T23:03:11.099+05:30  INFO 10356 --- [tutorials point] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:03:11.317+05:30  WARN 10356 --- [tutorials point] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T23:03:11.555+05:30  INFO 10356 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-06-14T23:03:11.561+05:30  INFO 10356 --- [tutorials point] [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.509 seconds (process running for 3.047)
+2024-06-14T23:03:20.516+05:30  INFO 10356 --- [tutorials point] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T23:03:20.516+05:30  INFO 10356 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T23:03:20.517+05:30  INFO 10356 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-14T23:03:48.786+05:30  INFO 10356 --- [tutorials point] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:03:48.791+05:30  INFO 10356 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T23:03:48.793+05:30  INFO 10356 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T23:03:51.274+05:30  INFO 10389 --- [tutorials point] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 22.0.1 with PID 10389 (/Users/daxpatel/Desktop/demo/target/classes started by daxpatel in /Users/daxpatel/Desktop/demo)
+2024-06-14T23:03:51.276+05:30  INFO 10389 --- [tutorials point] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T23:03:51.687+05:30  INFO 10389 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T23:03:51.716+05:30  INFO 10389 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-06-14T23:03:52.006+05:30  INFO 10389 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-06-14T23:03:52.014+05:30  INFO 10389 --- [tutorials point] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T23:03:52.014+05:30  INFO 10389 --- [tutorials point] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T23:03:52.045+05:30  INFO 10389 --- [tutorials point] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T23:03:52.045+05:30  INFO 10389 --- [tutorials point] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+2024-06-14T23:03:52.134+05:30  INFO 10389 --- [tutorials point] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T23:03:52.162+05:30  INFO 10389 --- [tutorials point] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-14T23:03:52.179+05:30  INFO 10389 --- [tutorials point] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-14T23:03:52.348+05:30  INFO 10389 --- [tutorials point] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14T23:03:52.363+05:30  INFO 10389 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T23:03:52.441+05:30  INFO 10389 --- [tutorials point] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4adf3582
+2024-06-14T23:03:52.442+05:30  INFO 10389 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T23:03:52.459+05:30  WARN 10389 --- [tutorials point] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-14T23:03:52.937+05:30  INFO 10389 --- [tutorials point] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-14T23:03:52.947+05:30  WARN 10389 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:03:52.947+05:30  WARN 10389 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2024-06-14T23:03:52.948+05:30  WARN 10389 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:03:52.948+05:30  WARN 10389 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "student_sequence" does not exist, skipping
+2024-06-14T23:03:52.960+05:30  INFO 10389 --- [tutorials point] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:03:53.173+05:30  WARN 10389 --- [tutorials point] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T23:03:53.399+05:30  INFO 10389 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-06-14T23:03:53.405+05:30  INFO 10389 --- [tutorials point] [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.414 seconds (process running for 2.877)
+2024-06-14T23:03:55.264+05:30  INFO 10389 --- [tutorials point] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T23:03:55.264+05:30  INFO 10389 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T23:03:55.265+05:30  INFO 10389 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-06-14T23:04:07.271+05:30  INFO 10389 --- [tutorials point] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:04:07.278+05:30  INFO 10389 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-14T23:04:07.280+05:30  INFO 10389 --- [tutorials point] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-14T23:04:09.673+05:30  INFO 10425 --- [tutorials point] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 22.0.1 with PID 10425 (/Users/daxpatel/Desktop/demo/target/classes started by daxpatel in /Users/daxpatel/Desktop/demo)
+2024-06-14T23:04:09.674+05:30  INFO 10425 --- [tutorials point] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-14T23:04:10.091+05:30  INFO 10425 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14T23:04:10.122+05:30  INFO 10425 --- [tutorials point] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2024-06-14T23:04:10.412+05:30  INFO 10425 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-06-14T23:04:10.419+05:30  INFO 10425 --- [tutorials point] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-14T23:04:10.419+05:30  INFO 10425 --- [tutorials point] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-14T23:04:10.450+05:30  INFO 10425 --- [tutorials point] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-14T23:04:10.450+05:30  INFO 10425 --- [tutorials point] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+2024-06-14T23:04:10.537+05:30  INFO 10425 --- [tutorials point] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14T23:04:10.565+05:30  INFO 10425 --- [tutorials point] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-14T23:04:10.583+05:30  INFO 10425 --- [tutorials point] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-14T23:04:10.752+05:30  INFO 10425 --- [tutorials point] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14T23:04:10.767+05:30  INFO 10425 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-14T23:04:10.843+05:30  INFO 10425 --- [tutorials point] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b829d5
+2024-06-14T23:04:10.843+05:30  INFO 10425 --- [tutorials point] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-14T23:04:10.861+05:30  WARN 10425 --- [tutorials point] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-14T23:04:11.332+05:30  INFO 10425 --- [tutorials point] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-14T23:04:11.342+05:30  WARN 10425 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:04:11.342+05:30  WARN 10425 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2024-06-14T23:04:11.343+05:30  WARN 10425 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-14T23:04:11.343+05:30  WARN 10425 --- [tutorials point] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "student_sequence" does not exist, skipping
+2024-06-14T23:04:11.356+05:30  INFO 10425 --- [tutorials point] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14T23:04:11.593+05:30  WARN 10425 --- [tutorials point] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14T23:04:11.824+05:30  INFO 10425 --- [tutorials point] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-06-14T23:04:11.831+05:30  INFO 10425 --- [tutorials point] [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.446 seconds (process running for 2.886)
+2024-06-14T23:04:16.148+05:30  INFO 10425 --- [tutorials point] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14T23:04:16.148+05:30  INFO 10425 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-14T23:04:16.149+05:30  INFO 10425 --- [tutorials point] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
