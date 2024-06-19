@@ -1,16 +1,9 @@
 package com.example.demo.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.InputStreamResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 
 import java.util.List;
 
@@ -38,28 +31,6 @@ public class StudentController {
     @GetMapping("/students")
     public List<Student> getStudents() {
         return studentService.getStudents();
-    }
-
-    @GetMapping("/download")
-    public ResponseEntity<Object> downloadFile() throws IOException {
-        String filename = "/Users/daxpatel/Desktop/demo/myTestLog.log";
-        File file = new File(filename);
-        if (!file.exists()) {
-            return ResponseEntity.status(404).body("File not founds");
-        }
-        InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Disposition", String.format("attachment; filename=\"%s\"", file.getName()));
-        headers.add("Cache-Control", "no-cache, no-store, must-revalidate");
-        headers.add("Pragma", "no-cache");
-        headers.add("Expires", "0");
-
-
-        return ResponseEntity.ok()
-                .headers(headers)
-                .contentLength(file.length())
-                .contentType(MediaType.APPLICATION_OCTET_STREAM)
-                .body("File download in progress");
     }
 
     @PostMapping
