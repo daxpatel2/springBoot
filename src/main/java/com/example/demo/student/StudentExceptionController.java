@@ -1,5 +1,7 @@
 package com.example.demo.student;
 
+import com.example.demo.custom_exceptions.DataNotUpdatedException;
+import com.example.demo.custom_exceptions.StudentNotfoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

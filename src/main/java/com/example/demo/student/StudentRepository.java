@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/**
+ * Spring application should follow this pipeline:
+ * Browser -> Controller -> Service -> Repository -> Database
+ */
 @Repository
 interface StudentRepository extends JpaRepository<Student,Long> {
 
